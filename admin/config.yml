@@ -1,0 +1,38 @@
+backend:
+  name: github
+  repo: jubnatnapat/natnapatk
+  branch: cms-development
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        required: false
+        field:
+          label: "Image"
+          name: "image"
+          widget: "image"
+
+      - label: "Content Type"
+        name: "type"
+        widget: "select"
+        options:
+          - "Gallery"
+          - "Text"
