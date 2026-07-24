@@ -1,0 +1,132 @@
+body{
+    margin: 40px;
+    font-family:Arial, sans-serif;
+}
+
+.archive{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+button{
+    background:none;
+    border:none;
+    text-align:left;
+    font-size:14px;
+}
+
+button:hover{
+    font-style:italic;
+}
+
+#works-gallery,
+#exhibitions-gallery{
+
+    margin-top:30px;
+    min-height:300px;
+    border:1px solid #ddd;
+}
+
+nav div{
+
+    margin-bottom:10px;
+
+    cursor:pointer;
+
+    width:fit-content;
+
+}
+
+nav div:hover{
+
+    font-style:italic;
+
+}
+
+.selected{
+
+    text-decoration:underline;
+
+    text-underline-offset: 4px;
+
+}
+
+#works-gallery{
+
+    display:flex;
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    white-space:nowrap;
+
+    gap:2px;
+
+    height:80vh;
+
+    padding-bottom:10px;
+
+    scrollbar-width:none;
+
+}
+
+#works-gallery::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+#works-gallery img{
+
+    height:79vh;
+
+    flex-shrink:0;
+
+    border-radius:5px;
+
+}
+
+#works-details{
+    margin-top:20px;
+    max-width:600px;
+}
+
+#works-details h3{
+    font-size:16px;
+    font-weight:normal;
+    margin:0 0 8px 0;
+}
+
+#works-details p{
+    margin:0 0 12px 0;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.relations{
+    margin-top:24px;
+}
+
+.relations div:first-child{
+    margin-bottom:8px;
+}
+
+.relation{
+
+    cursor:pointer;
+
+    width:fit-content;
+
+}
+
+.relation:hover{
+
+    text-decoration:underline;
+
+}
