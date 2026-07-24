@@ -36,10 +36,8 @@ button:hover{
 
 nav div{
 
-    margin-bottom:10px;
-
+    margin-bottom:10px
     cursor:pointer;
-
     width:fit-content;
 
 }
@@ -53,7 +51,6 @@ nav div:hover{
 .selected{
 
     text-decoration:underline;
-
     text-underline-offset: 4px;
 
 }
@@ -63,15 +60,10 @@ nav div:hover{
     display:flex;
     overflow-x:auto;
     overflow-y:hidden;
-
     white-space:nowrap;
-
     gap:2px;
-
     height:80vh;
-
     padding-bottom:10px;
-
     scrollbar-width:none;
 
 }
@@ -85,9 +77,7 @@ nav div:hover{
 #works-gallery img{
 
     height:79vh;
-
     flex-shrink:0;
-
     border-radius:5px;
 
 }
@@ -109,6 +99,51 @@ nav div:hover{
     line-height:1.5;
 }
 
+#exhibitions-gallery{
+
+    display:flex;
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space:nowrap;
+    gap:2px;
+    height:80vh;
+    padding-bottom:10px;
+    scrollbar-width:none;
+
+}
+
+#exhibitions-gallery::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+#exhibitions-gallery img{
+
+    height:79vh;
+    flex-shrink:0;
+    border-radius:5px;
+
+}
+
+#exhibitions-details{
+    margin-top:20px;
+    max-width:600px;
+}
+
+#exhibitions-details h3{
+    font-size:16px;
+    font-weight:normal;
+    margin:0 0 8px 0;
+}
+
+#exhibitions-details p{
+    margin:0 0 12px 0;
+    font-size:14px;
+    line-height:1.5;
+}
+
+
 .relations{
     margin-top:24px;
 }
@@ -120,7 +155,6 @@ nav div:hover{
 .relation{
 
     cursor:pointer;
-
     width:fit-content;
 
 }
